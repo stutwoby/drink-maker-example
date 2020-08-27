@@ -1,0 +1,7 @@
+<button (click)="startToMakeDrink(1)">Tea</button>
+<button (click)="startToMakeDrink(2)">Coffee</button>
+<button (click)="startToMakeDrink(3)">Hot Chocolate</button>
+
+<div>
+    <p *ngFor="let step of signalrService.data;">{{step}}</p>
+</div>
